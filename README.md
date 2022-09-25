@@ -23,7 +23,7 @@ I´m not responsible for any not functioning printers or lost files!
 ## Installation
 
     wget https://raw.githubusercontent.com/T4KUUY4/Voron-Stuff/main/Automatic%20Backup/install.sh
-    
+
     bash install.sh
 
 # rClone Setup
