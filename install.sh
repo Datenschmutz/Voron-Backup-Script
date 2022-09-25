@@ -17,7 +17,7 @@ sudo chmod +x /home/$USER/backup.sh
 
 mkdir /home/$USER/autobackup
 
-apt-get install rclone
+sudo apt-get install rclone
 rclone config
 
 echo "sudo bash /home/$USER/backup.sh" | sudo tee -a /etc/rc.local
