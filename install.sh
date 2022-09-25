@@ -12,14 +12,13 @@ ECHO    \___/ \____/|__|   \____/|___|  /         \____|__  /____/ |__|  \____/|
 ECHO                                  \/                  \/                          \/      \/     \/     \/     |__|    
 ECHO "Based on Takuyas Script"
 cd /home/$USER/ 
-sudo wget https://raw.githubusercontent.com/Datenschmutz/Voron/main/Automatic%20Backup/backup.sh
+sudo wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup.sh
 sudo chmod +x /home/$USER/backup.sh
 
 mkdir /home/$USER/autobackup
 
 apt-get install rclone
 rclone config
-
 
 echo "sudo bash /home/$USER/backup.sh" | sudo tee -a /etc/rc.local
 clear
