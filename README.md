@@ -11,10 +11,10 @@ I´m not responsible for any not functioning printers or lost files!
 ## Installation
 
 ```
-wget https://raw.githubusercontent.com/T4KUUY4/Voron-Stuff/main/Automatic%20Backup/install.sh
+wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/install.sh
 ```
     bash install.sh
-# rClone Setup
+### rClone Setup
     specify n for n) New remote
     specify a name, e.g. eu2
     specify 4 for Amazon S3 Compliant Storage Providers including AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, SeaweedFS, and Tencent COS
