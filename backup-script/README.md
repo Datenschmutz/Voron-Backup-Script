@@ -1,4 +1,4 @@
-# Auto-Backup your printer config files with rClone to S3.
+# Auto-Backup your printer config files with rClone to S3 and more.
 
 ## Disclaimer
 WORK IN PROGRESS. **BACKUP YOUR FILES MANUALLY!!!!**
@@ -41,6 +41,8 @@ sudo nano /home/$USER/backup.sh
 * Press `y` for *Yes this is OK (default)*
 * Optionally specify `q` to *quit configuration mode*
 
+### rClone Setup for FTP
+>comming soon
  
 ## Want a Mainsail/Fluidd Backup Macro?
 **Requires G-Gcode Shell Command Extension (install with KIAUH)**
