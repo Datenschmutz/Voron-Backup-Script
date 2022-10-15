@@ -1,4 +1,6 @@
 #!/bin/bash
+BIRed='\033[1;91m'
+clear='\033[0m'
 # Datenschmutz Auto-Backup
 # On Every reboot, selected files will be automatically backuped into timestamped folders.
 
@@ -38,6 +40,70 @@ GCODES='no'
 ###############
 ## DON'T EDIT ZONE ##
 ###############
+
+#config check
+
+if [ $CONFIG = "yes" ] || [ $CONFIG = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}Klipper config argument can only be yes/no please correct "CONFIG=" in backup.sh${clear}. && exit
+
+fi
+
+if [ $RCLONE = "fillme"  ]
+then
+echo -e ${BIRed}rClone config argument is at default value please configure "backup.sh" via the "install.sh" script{clear}. && exit
+
+fi
+
+if [ $KLIPPER = "yes" ] || [ $KLIPPER = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}Klipper config argument can only be yes/no please correct "KLIPPER=" in backup.sh${clear}. && exit
+
+fi
+
+if [ $EXTRAS = "yes" ] || [ $EXTRAS = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}Extras Backup (.py Scripts/ Ercf...) config argument can only be yes/no please correct "EXTRAS=" in backup.sh${clear}. && exit
+
+fi
+
+if [ $LOGS = "yes" ] || [ $LOGS = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}Logs config argument can only be yes/no please correct "LOGS=" in backup.sh${clear}. && exit
+
+fi
+
+if [ $MOONRAKER = "yes" ] || [ $MOONRAKER = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}Moonraker config argument can only be yes/no please correct "MOONRAKER=" in backup.sh${clear}. && exit
+
+fi
+
+if [ $GCODES = "yes" ] || [ $GCODES = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}GCodes config argument can only be yes/no please correct "GCODES=" in backup.sh${clear}. && exit
+
+fi
+
+if [ $HISTORY = "yes" ] || [ $HISTORY = "no" ]
+then
+  echo
+else
+  echo -e ${BIRed}History config argument can only be yes/no please correct "HISTORY=" in backup.sh${clear}. && exit
+
+fi
 
 
 CURRENTDATE=$(date)
