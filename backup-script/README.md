@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/ins
 ```
     bash install.sh
 ### rClone Setup for S3 Storage
->I use the Contabo S3 storage based on Cleph for my tutorial, the configuration may differ for other providers.
+>I use the Contabo S3 storage based on Cleph for my tutorial, the configuration may differ for other providers.[^1]
 * Press `n` for new remote storage
 * Specify a rClone Destination *name*, e.g. `MyS3-Storage`
 * Press `4` for *Amazon S3 Compliant Storage Providers including AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, SeaweedFS, and Tencent COS*
@@ -45,3 +45,5 @@ sudo nano /home/$USER/backup.sh
 **Requires G-Gcode Shell Command Extension (install with KIAUH)**
 * Download the backup.cfg and include it in your printer.cfg
 
+## Mentions, Credits and Sources
+[^1]: Variation der rCLone Anleitung von Contabo - https://docs.contabo.com/docs/products/Object-Storage/Tools/rclone
