@@ -14,7 +14,7 @@ rclone config
 echo "sudo bash /home/$USER/backup.sh" | sudo tee -a /etc/rc.local
 clear
 
-read -p "rclone Job Name:" rclone
+read -p "rclone destination Name:" rclone
 read -p "Enable Klipper Backup? (yes/no): " klipp
 read -p "Enable Moonraker History (print stats)? (yes/no): " hist
 read -p "Enable Extras Backup (.py Scripts/ Ercf...) (yes/no): " extr

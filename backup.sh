@@ -85,7 +85,7 @@ fi
 
 cd "$BCKUPPATH" && tar -cvzf Voron-Backup-$(date +%d.%m.%Y).tar.gz --directory="$BCKUPPATH" .
 
-/usr/bin/rclone move -P --update --verbose --transfers 30 --log-file=/var/log/upload.log "/opt/backup" "s3-eu2:backup/"
+/usr/bin/rclone move -P --update --verbose --transfers 30 --log-file=/var/log/upload.log "$BCKUPPATH" "s3-eu2:backup/"
 
 ###############################
 ## CUSTOM BACKUP FOLDER ZONE ##

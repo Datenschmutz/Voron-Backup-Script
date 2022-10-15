@@ -10,10 +10,9 @@ I´m not responsible for any not functioning printers or lost files!
 
 ## Installation
 
- ```
- wget https://raw.githubusercontent.com/T4KUUY4/Voron-Stuff/main/Automatic%20Backup/install.sh
- ```
-
+```
+wget https://raw.githubusercontent.com/T4KUUY4/Voron-Stuff/main/Automatic%20Backup/install.sh
+```
     bash install.sh
 # rClone Setup
     specify n for n) New remote
@@ -35,8 +34,7 @@ I´m not responsible for any not functioning printers or lost files!
 ## Configuration
 * The backup script has some additional configuration options. Open it with `sudo nano /home/$USER/backup.sh`
 *  Follow the instructions given in the script
-* You can also include any other folder if you feel the need. 
-* The Syntax is: `sudo cp -r /YOUR/FOLDER/ "$MNTPATH"`
+
  
 ## Want a Mainsail/Fluidd Backup Macro?
 **Requires G-Gcode Shell Command Extension (install with KIAUH)**
