@@ -14,6 +14,14 @@ I´m not responsible for any not functioning printers or lost files!
 wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/install.sh
 ```
     bash install.sh
+
+## Configuration
+* The backup script has some additional configuration options. Open it with `sudo nano /home/$USER/backup.sh`
+```
+sudo nano /home/$USER/backup.sh
+```
+*  Follow the instructions given in the script
+
 ### rClone Setup for S3 Storage
 >I use the Contabo S3 storage based on Cleph for my tutorial, the configuration may differ for other providers.[^1]
 * Press `n` for new remote storage
@@ -32,13 +40,6 @@ wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/ins
 * Press `n` for *Edit advanced config*
 * Press `y` for *Yes this is OK (default)*
 * Optionally specify `q` to *quit configuration mode*
-
-## Configuration
-* The backup script has some additional configuration options. Open it with `sudo nano /home/$USER/backup.sh`
-```
-sudo nano /home/$USER/backup.sh
-```
-*  Follow the instructions given in the script
 
  
 ## Want a Mainsail/Fluidd Backup Macro?
