@@ -6,19 +6,7 @@ I´m not responsible for any not functioning printers or lost files!
 
 ## Requirements 
  * S3 Storage
- * Basic knowlage of rClone
- 
- * Windows: 
-	* Create a new user for the shared folder
-	* Example Username=**Printer**, Password=**Backup**
-	* Open  **File Explorer**  and browse to the folder you want to share.
-	* Right-click it and select  **Properties**.
-	* Select the **Sharing** tab **> Share.**
-	* Within the  **Network access**  window, select the new user you just created.
-	* Click  **Add > Share**.
-	* Copy the network path.
-	* Click  **Done**.
-			
+ * Basic knowlage of rClone		
 
 ## Installation
 
