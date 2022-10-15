@@ -91,7 +91,7 @@ cd "$BCKUPPATH" && tar -cvzf Voron-Backup-$(date +%d.%m.%Y).tar.gz --directory="
 ## CUSTOM BACKUP FOLDER ZONE ##
 ###############################
 
-#Example: sudo cp -r /YOUR/FOLDER "$MNTPATH"
+#Example: sudo cp -r /YOUR/FOLDER "$BCKUPPATH"
 
 
 
@@ -101,4 +101,4 @@ cd "$BCKUPPATH" && tar -cvzf Voron-Backup-$(date +%d.%m.%Y).tar.gz --directory="
 
 
 
-#Made by Takuya#0523 ;)
+#Remixed by Datenschmutz based on Takuya Script ;)

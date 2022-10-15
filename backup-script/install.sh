@@ -6,7 +6,7 @@ echo #############################
 echo "Based on Takuyas Script"
 
 cd /home/$USER/ 
-sudo wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup.sh
+sudo wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/backup.sh
 sudo chmod +x /home/$USER/backup.sh
 
 mkdir /home/$USER/autobackup

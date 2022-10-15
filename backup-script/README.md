@@ -11,7 +11,7 @@ I´m not responsible for any not functioning printers or lost files!
 ## Installation
 
 ```
-wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/install.sh
+wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/install.sh
 ```
     bash install.sh
 ### rClone Setup
