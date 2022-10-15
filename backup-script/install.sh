@@ -3,7 +3,6 @@
 echo "#############################"
 echo Datenschmutz Auto Backup install
 echo "#############################"
-echo "Based on Takuyas Script"
 
 cd /home/$USER/ 
 sudo wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/backup.sh
@@ -12,8 +11,10 @@ sudo chmod +x /home/$USER/backup.sh
 mkdir /home/$USER/autobackup
 
 sudo apt-get install rclone
+
 clear
 echo rClone Install - view Readme.md in Github
+
 rclone config
 
 echo "sudo bash /home/$USER/backup.sh" | sudo tee -a /etc/rc.local
@@ -39,3 +40,4 @@ sed -i "s/GCODE='no'/GCODE='$gcod'/" /home/$USER/backup.sh
 echo "####################################"
 echo "## Thank you for using my script, ##"
 echo "####################################"
+echo "Thanks to @T4KUUY4 for the foundation of this script"
