@@ -69,7 +69,7 @@ if [ $EXTRAS = "yes" ] || [ $EXTRAS = "no" ]
 then
   echo
 else
-  echo -e ${BIRed}Extras Backup (.py Scripts/ Ercf...) config argument can only be yes/no please correct "EXTRAS=" in backup.sh${clear}. && exit
+  echo -e ${BIRed}Extras Backup -.py Scripts/ Ercf...- config argument can only be yes/no please correct "EXTRAS=" in backup.sh${clear}. && exit
 
 fi
 
