@@ -14,25 +14,30 @@ I´m not responsible for any not functioning printers or lost files!
 wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/install.sh
 ```
     bash install.sh
-### rClone Setup
-    specify n for n) New remote
-    specify a name, e.g. eu2
-    specify 4 for Amazon S3 Compliant Storage Providers including AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, SeaweedFS, and Tencent COS
-    specify 3 for Ceph Object Storage
-    speficy 1 for Enter AWS credentials in the next step.
-    specify your access_key, e.g. 82046e8110804a43bf29c1ae426a724d for access_key_id
-    specify your secret_key, e.g. 82e69bd7a52076c527154297a76c2233 for secret_access_key
-    press return to skip region
-    specifiy the S3 URL, e.g. https://eu2.contabostorage.com for endpoint
-    press return to skip location_constraint
-    press return to skil acl
-    press return to skip server_side_encryption
-    press return to skip sse_kms_key_id
-    specify n for Edit advanced config
-    specify y for Yes this is OK (default)
-    optionally specify q to quit configuration mode
+### rClone Setup for S3 Storage
+>I use the Contabo S3 storage based on Cleph for my tutorial, the configuration may differ for other providers.
+* Press `n` for new remote storage
+* Specify a rClone Destination *name*, e.g. `MyS3-Storage`
+* Press `4` for *Amazon S3 Compliant Storage Providers including AWS, Alibaba, Ceph, Digital Ocean, Dreamhost, IBM COS, Minio, SeaweedFS, and Tencent COS*
+* Select the appropriate S3 storage solution from e.g. `3` *for Ceph Object Storage*
+* Press `1` for Enter AWS credentials in the next step.
+* Specify your `access_key`, *e.g. 82046e8110804a43bf29c1ae426a724d* for *access_key_id*
+* Specify your `secret_key`, *e.g. 82e69bd7a52076c527154297a76c2233* for *secret_access_key*
+* Press `return` to skip *region*
+* Specifiy the S3 URL, e.g. https://eu2.contabostorage.com for *endpoint*
+* Press `return` to skip *location_constraint*
+* Press `return` to skip *acl*
+* Press `return` to skip *server_side_encryption*
+* Press `return` to skip *sse_kms_key_id*
+* Press `n` for *Edit advanced config*
+* Press `y` for *Yes this is OK (default)*
+* Optionally specify `q` to *quit configuration mode*
+
 ## Configuration
 * The backup script has some additional configuration options. Open it with `sudo nano /home/$USER/backup.sh`
+```
+sudo nano /home/$USER/backup.sh
+```
 *  Follow the instructions given in the script
 
  
