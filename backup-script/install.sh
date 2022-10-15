@@ -28,7 +28,7 @@ read -p "Enable Log Backup (yes/no): " log
 read -p "Enable Moonraker Backup (yes/no): " moonrake
 read -p "Enable G-Code File Backup. Warning: Will take up more space over time (yes/no): " gcod
 
-sed -i "s/RCLONE='fillme' /RCLONE='$rclone'/" /home/$USER/backup.sh
+sed -i "s/RCLONE='fillme'/RCLONE='$rclone'/" /home/$USER/backup.sh
 sed -i "s/KLIPPER='no'/KLIPPER='$klipp'/" /home/$USER/backup.sh
 sed -i "s/HISTORY='no'/HISTORY='$hist'/" /home/$USER/backup.sh
 sed -i "s/EXTRAS='no'/EXTRAS='$extr'/" /home/$USER/backup.sh
