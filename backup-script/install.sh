@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo #############################
+echo "#############################"
 echo Datenschmutz Auto Backup install
-echo #############################
+echo "#############################"
 echo "Based on Takuyas Script"
 
 cd /home/$USER/ 
@@ -12,6 +12,8 @@ sudo chmod +x /home/$USER/backup.sh
 mkdir /home/$USER/autobackup
 
 sudo apt-get install rclone
+clear
+echo rClone Install - view Readme.md in Github
 rclone config
 
 echo "sudo bash /home/$USER/backup.sh" | sudo tee -a /etc/rc.local
