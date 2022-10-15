@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ECHO #############################
 ECHO Datenschmutz Auto Backup install
 ECHO #############################
