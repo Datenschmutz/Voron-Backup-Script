@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ECHO #############################
-ECHO Datenschmutz Auto Backup install
-ECHO #############################
-ECHO "Based on Takuyas Script"
+echo #############################
+echo Datenschmutz Auto Backup install
+echo #############################
+echo "Based on Takuyas Script"
 
 cd /home/$USER/ 
 sudo wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup.sh
