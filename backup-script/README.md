@@ -46,4 +46,6 @@ sudo nano /home/$USER/backup.sh
 * Download the backup.cfg and include it in your printer.cfg
 
 ## Mentions, Credits and Sources
-[^1]: Variation der rCLone Anleitung von Contabo - https://docs.contabo.com/docs/products/Object-Storage/Tools/rclone
+* Thanks to @T4KUUY4 for the foundation of this script
+
+[^1]: Variation of the rCLone setup manual from Contabo - https://docs.contabo.com/docs/products/Object-Storage/Tools/rclone
