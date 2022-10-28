@@ -42,7 +42,6 @@ GCODES='no'
 ###############
 
 #Config check
-
 if [ $CONFIG = "yes" ] || [ $CONFIG = "no" ]
 then
   :
