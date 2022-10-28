@@ -16,7 +16,7 @@ USERNAME="pi"
 #Klipper Config (default on)
 CONFIG="yes"
 
-#Replace "pi" if you have a different user. "pi" is standard in most installations.
+#Replace with the name of your rClone destination
 RCLONE='fillme'
 
 #Klipper
@@ -41,7 +41,7 @@ GCODES='no'
 ## DON'T EDIT ZONE ##
 ###############
 
-#config check
+#Config check
 
 if [ $CONFIG = "yes" ] || [ $CONFIG = "no" ]
 then
@@ -105,7 +105,7 @@ else
 
 fi
 
-
+#Copy selected files/folders
 CURRENTDATE=$(date)
 BCKUPPATH=/home/$USER/autobackup
 
@@ -149,8 +149,10 @@ then
 
 fi
 
+#Compresses copied files into a tar.gz archive
 cd "$BCKUPPATH" && tar -cvzf Voron-Backup-$(date +%d.%m.%Y).tar.gz --directory="$BCKUPPATH" .
 
+#rClone command to move tar.gz archive to S3 destination directory
 /usr/bin/rclone move -P --update --verbose --transfers 30 --log-file=/var/log/upload.log "$BCKUPPATH" "s3-eu2:backup/"
 
 ###############################
