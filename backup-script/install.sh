@@ -13,7 +13,7 @@ mkdir /home/$USER/autobackup
 sudo apt-get install rclone
 
 clear
-echo rClone Install - view Readme.md in Github
+echo rClone Install - view README.md in Github
 
 rclone config
 
