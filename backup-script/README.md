@@ -16,3 +16,9 @@ Vist **[docs](https://docs.datenschmutz.dev/docs/S3-Auto-backup)**
 * Thanks to @T4KUUY4 for the foundation of this script - https://github.com/T4KUUY4/Voron-Stuff/tree/main/Automatic%20Backup
 
 [^1]: Variation of the rCLone setup manual from Contabo - https://docs.contabo.com/docs/products/Object-Storage/Tools/rclone
+
+
+<h3 align="center">
+  <p align="center">A script from</p>
+  <a href="https://docs.datenschmutz.dev/docs/S3-Auto-backup"><img src="https://docs.datenschmutz.dev/img/dmz-logo-main-350x-border.png" alt="Datenschmutz"></a>
+</h3>
