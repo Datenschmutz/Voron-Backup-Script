@@ -5,7 +5,7 @@ echo Datenschmutz Auto Backup install
 echo "#############################"
 
 cd /home/$USER/ 
-sudo wget https://raw.githubusercontent.com/Datenschmutz/VORON/main/backup-script/backup.sh
+sudo wget https://raw.githubusercontent.com/Datenschmutz/Voron-Backup-Script/main/backup.sh
 sudo chmod +x /home/$USER/backup.sh
 
 mkdir /home/$USER/autobackup
